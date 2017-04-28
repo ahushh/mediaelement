@@ -577,7 +577,7 @@ Object.assign(MediaElementPlayer.prototype, {
 		;
 
 		if (track !== null && track.isLoaded) {
-			let i = t.searchTrackPosition(track.entries, t.media.currentTime);
+			let i = t.searchTrackPosition(track.entries, t.media.currentTime * t.media.speed);
 			if (i > -1) {
 				// Set the line before the timecode as a class so the cue can be targeted if needed
 				t.captionsText.innerHTML = sanitize(track.entries[i].text);

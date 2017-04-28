@@ -445,7 +445,7 @@ class MediaElementPlayer {
 
 				const
 					cloneNode = t.node.cloneNode(),
-					children = t.node.childNodes,
+					children = t.node.children,
 					mediaFiles = [],
 					tracks = []
 				;
